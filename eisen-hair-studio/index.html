@@ -157,16 +157,37 @@
   /* Hizmetler list */
   .svc{border-top:1px solid var(--line)}
   .svc-row{
-    display:grid;grid-template-columns:34px 1fr;gap:12px;
+    display:grid;
+    grid-template-columns:34px minmax(0,1fr);
+    column-gap:12px;row-gap:4px;
     padding:26px 0;border-bottom:1px solid var(--line);
     transition:padding-left .3s ease,background .3s ease;
   }
-  @media(min-width:820px){.svc-row{grid-template-columns:64px 1.1fr 1fr;gap:28px;padding:32px 0;align-items:start}}
+  @media(min-width:820px){
+    .svc-row{
+      grid-template-columns:64px minmax(0,1.1fr) minmax(0,1fr);
+      column-gap:28px;row-gap:0;padding:32px 0;align-items:start;
+    }
+  }
   .svc-row:hover{padding-left:8px}
-  .svc-n{font-size:11px;letter-spacing:.18em;color:var(--green);padding-top:6px;font-weight:600}
-  .svc-row h3{font-size:clamp(20px,2.4vw,27px);letter-spacing:-.02em}
-  .svc-row p{color:var(--muted);font-size:14px;margin-top:8px;max-width:380px}
-  @media(min-width:820px){.svc-row p{margin-top:0}}
+  .svc-n{
+    grid-column:1;grid-row:1 / span 2;
+    font-size:11px;letter-spacing:.18em;color:var(--green);padding-top:6px;font-weight:600;
+  }
+  .svc-row h3{
+    grid-column:2;grid-row:1;
+    font-size:clamp(20px,2.4vw,27px);letter-spacing:-.02em;min-width:0;
+  }
+  .svc-row p{
+    grid-column:2;grid-row:2;
+    color:var(--muted);font-size:14px;margin-top:6px;
+    min-width:0;width:100%;max-width:380px;
+  }
+  @media(min-width:820px){
+    .svc-n{grid-row:1}
+    .svc-row h3{grid-column:2;grid-row:1}
+    .svc-row p{grid-column:3;grid-row:1;margin-top:0}
+  }
   .note{margin-top:26px;font-size:13px;color:var(--muted)}
   .note a{color:var(--green);border-bottom:1px solid currentColor;padding-bottom:1px}
 
