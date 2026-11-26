@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eisen Hair Studio — Arnavutköy</title>
+<meta name="description" content="Arnavutköy Merkez'de renklendirme ve balyaj odaklı saç stüdyosu. Eisen Hair Studio — Töre Sokak. Randevu: 0551 066 39 74">
+<meta name="theme-color" content="#14140F">
+<meta name="robots" content="noindex, nofollow">
+
+<meta property="og:title" content="Eisen Hair Studio — Arnavutköy">
+<meta property="og:description" content="Renklendirme, balyaj ve kesim. Arnavutköy Merkez.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Eisen Hair Studio",
+  "telephone": "+905510663974",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Merkez Mah. Töre Sk. No:2 D:1A",
+    "addressLocality": "Arnavutköy",
+    "addressRegion": "İstanbul",
+    "addressCountry": "TR"
+  },
+  "sameAs": ["https://www.instagram.com/eisenhairstudio/"]
+}
+</script>
+
+<style>
+  :root{
+    --bone:#EFECE6;
+    --bone-2:#E4E0D8;
+    --ink:#14140F;
+    --green:#3F4F41;
+    --green-dark:#2B362D;
+    --muted:#6B6A62;
+    --line:rgba(20,20,15,.16);
+    --max:1240px;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bone);color:var(--ink);
+    font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:15.5px;line-height:1.65;font-weight:400;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  figure{margin:0}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{margin:0;font-weight:600;line-height:1.02;letter-spacing:-.03em}
+  .serif{font-family:"Instrument Serif",Georgia,serif;font-weight:400;letter-spacing:-.01em}
+  .serif em{font-style:italic}
+  p{margin:0}
+  ::selection{background:var(--green);color:var(--bone)}
+
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+  @media(min-width:820px){.wrap{padding:0 48px}}
+
+  .kicker{
+    font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;
+    font-weight:600;color:var(--green);
+  }
+
+  /* ---------- Topbar ---------- */
+  .topbar{
+    position:fixed;inset:0 0 auto 0;z-index:50;padding:16px 0;
+    transition:background .3s ease,box-shadow .3s ease,padding .3s ease;
+  }
+  .topbar.solid{background:rgba(239,236,230,.94);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line);padding:11px 0}
+  .topbar-in{display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .logo{display:flex;align-items:baseline;gap:10px;white-space:nowrap}
+  .logo b{
+    font-size:20px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;
+  }
+  .logo i{
+    font-family:"Instrument Serif",serif;font-style:italic;font-size:14px;
+    color:var(--green);letter-spacing:.02em;
+  }
+  .topbar:not(.solid) .logo b,.topbar:not(.solid) .lnk{color:#fff}
+  .topbar:not(.solid) .logo i{color:#CBD3C6}
+  .menu{display:none;gap:28px}
+  @media(min-width:1000px){.menu{display:flex}}
+  .lnk{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;position:relative;padding:4px 0}
+  .lnk::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:currentColor;transition:width .25s}
+  .lnk:hover::after{width:100%}
+  .topbar-act{display:flex;align-items:center;gap:10px}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:14px 24px;border:1px solid transparent;border-radius:0;
+    font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    cursor:pointer;white-space:nowrap;transition:background .22s,color .22s,border-color .22s;
+  }
+  .btn:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+  .btn-fill{background:var(--ink);color:var(--bone)}
+  .btn-fill:hover{background:var(--green-dark)}
+  .btn-green{background:var(--green);color:#fff}
+  .btn-green:hover{background:var(--green-dark)}
+  .btn-line{border-color:rgba(255,255,255,.5);color:#fff}
+  .btn-line:hover{background:#fff;color:var(--ink);border-color:#fff}
+  .btn-ink{border-color:var(--ink);color:var(--ink)}
+  .btn-ink:hover{background:var(--ink);color:var(--bone)}
+
+  /* ---------- Hero ---------- */
+  .hero{background:var(--ink);color:#F4F1EC;padding:118px 0 0;position:relative;overflow:hidden}
+  .hero-grid{display:grid;gap:40px}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.15fr .85fr;gap:56px;align-items:end}}
+  .hero h1{
+    font-size:clamp(44px,8.4vw,104px);line-height:.92;letter-spacing:-.045em;
+    margin:20px 0 26px;font-weight:600;text-transform:uppercase;
+  }
+  .hero h1 .serif{
+    display:block;text-transform:none;font-size:clamp(38px,7vw,86px);
+    letter-spacing:-.01em;color:#CBD3C6;font-style:italic;margin-top:6px;
+  }
+  .hero p.lead{color:rgba(244,241,236,.74);max-width:430px;font-size:15px;font-weight:400}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+  .hero-facts{
+    display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:40px;
+    padding-top:20px;border-top:1px solid rgba(244,241,236,.18);
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,241,236,.55);
+  }
+  .hero-img{position:relative;height:360px;overflow:hidden;background:#2A2A24}
+  @media(min-width:900px){.hero-img{height:520px}}
+  .hero-img img{width:100%;height:100%;object-fit:cover;filter:contrast(1.04) saturate(.92)}
+  .hero-img .tag{
+    position:absolute;left:0;bottom:0;background:var(--bone);color:var(--ink);
+    padding:12px 18px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+  }
+  .marquee{
+    margin-top:56px;border-top:1px solid rgba(244,241,236,.14);border-bottom:1px solid rgba(244,241,236,.14);
+    padding:14px 0;overflow:hidden;white-space:nowrap;
+  }
+  .marquee span{
+    font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:rgba(244,241,236,.45);
+  }
+  .marquee span b{color:#CBD3C6;font-weight:600}
+
+  /* ---------- Sections ---------- */
+  section{padding:84px 0}
+  @media(min-width:820px){section{padding:112px 0}}
+  .sec-head{display:grid;gap:18px;margin-bottom:44px}
+  @media(min-width:820px){.sec-head{grid-template-columns:1fr 1fr;align-items:end;gap:40px}}
+  .sec-head h2{font-size:clamp(30px,4.6vw,54px)}
+  .sec-head p{color:var(--muted);font-size:14.5px;max-width:420px}
+  .sec-head .right{justify-self:start}
+  @media(min-width:820px){.sec-head .right{justify-self:end;text-align:right}}
+
+  /* Hizmetler list */
+  .svc{border-top:1px solid var(--line)}
+  .svc-row{
+    display:grid;grid-template-columns:34px 1fr;gap:12px;
+    padding:26px 0;border-bottom:1px solid var(--line);
+    transition:padding-left .3s ease,background .3s ease;
+  }
+  @media(min-width:820px){.svc-row{grid-template-columns:64px 1.1fr 1fr;gap:28px;padding:32px 0;align-items:start}}
+  .svc-row:hover{padding-left:8px}
+  .svc-n{font-size:11px;letter-spacing:.18em;color:var(--green);padding-top:6px;font-weight:600}
+  .svc-row h3{font-size:clamp(20px,2.4vw,27px);letter-spacing:-.02em}
+  .svc-row p{color:var(--muted);font-size:14px;margin-top:8px;max-width:380px}
+  @media(min-width:820px){.svc-row p{margin-top:0}}
+  .note{margin-top:26px;font-size:13px;color:var(--muted)}
+  .note a{color:var(--green);border-bottom:1px solid currentColor;padding-bottom:1px}
+
+  /* Galeri */
+  .gal{background:var(--bone-2)}
+  .gal-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  @media(min-width:820px){.gal-grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:230px}}
+  .gal-grid figure{overflow:hidden;position:relative;background:#D6D2C9;min-height:200px}
+  .gal-grid figure:nth-child(1){grid-column:span 2;grid-row:span 2}
+  @media(max-width:819px){.gal-grid figure:nth-child(1){min-height:300px}}
+  .gal-grid img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+  .gal-grid figure:hover img{transform:scale(1.04)}
+  .gal-grid .cap{
+    position:absolute;left:12px;bottom:10px;color:#fff;font-size:10px;
+    letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+    text-shadow:0 1px 10px rgba(0,0,0,.65);
+  }
+  .gal-grid figure::after{
+    content:"";position:absolute;inset:auto 0 0 0;height:50%;
+    background:linear-gradient(180deg,transparent,rgba(10,12,9,.6));pointer-events:none;
+  }
+
+  /* Süreç */
+  .steps{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+  @media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{background:var(--bone);padding:30px 26px 34px}
+  .step b{
+    display:block;font-family:"Instrument Serif",serif;font-size:38px;font-weight:400;
+    color:var(--green);line-height:1;margin-bottom:18px;
+  }
+  .step h3{font-size:18px;margin-bottom:10px}
+  .step p{font-size:13.5px;color:var(--muted)}
+
+  /* İletişim */
+  .contact{background:var(--green-dark);color:#EFECE6}
+  .contact .kicker{color:#A9B7A4}
+  .contact-grid{display:grid;gap:44px}
+  @media(min-width:900px){.contact-grid{grid-template-columns:.95fr 1.05fr;gap:64px}}
+  .contact h2{font-size:clamp(32px,4.8vw,54px);color:#F4F1EC;margin:16px 0 18px}
+  .contact p.lead{color:rgba(239,236,230,.66);font-size:14.5px;max-width:380px}
+  .info{list-style:none;padding:0;margin:36px 0 0;display:grid;gap:22px}
+  .info li{display:grid;grid-template-columns:76px 1fr;gap:16px}
+  .info .k{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(239,236,230,.4);padding-top:4px}
+  .info .v{font-size:14.5px;line-height:1.62}
+  .info .v a{border-bottom:1px solid rgba(239,236,230,.3);padding-bottom:1px}
+  .info .v a:hover{color:#fff;border-color:#A9B7A4}
+
+  .card{background:var(--bone);color:var(--ink);padding:30px 24px}
+  @media(min-width:600px){.card{padding:40px 36px}}
+  .card h3{font-size:24px;margin-bottom:6px}
+  .card .hint{font-size:12.5px;color:var(--muted);margin-bottom:24px}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;font-weight:700}
+  .field input,.field select,.field textarea{
+    width:100%;padding:12px 13px;border:1px solid rgba(20,20,15,.22);background:#fff;
+    font-family:inherit;font-size:14px;color:var(--ink);border-radius:0;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(63,79,65,.14)}
+  .field textarea{min-height:74px;resize:vertical}
+  .row2{display:grid;gap:14px}
+  @media(min-width:520px){.row2{grid-template-columns:1fr 1fr}}
+  .card .btn{width:100%;margin-top:6px}
+  .fine{font-size:11px;color:var(--muted);margin-top:12px;line-height:1.5}
+
+  .map{margin-top:56px;border-top:1px solid rgba(239,236,230,.16)}
+  .map iframe{width:100%;height:340px;border:0;display:block;filter:grayscale(.4) contrast(1.03)}
+
+  footer{background:#0E0F0C;color:rgba(239,236,230,.5);padding:34px 0;font-size:12px}
+  .foot{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between}
+  .foot b{color:#EFECE6;font-size:15px;letter-spacing:.24em;text-transform:uppercase}
+  footer a:hover{color:#EFECE6}
+  .demo-note{font-size:10.5px;color:rgba(239,236,230,.3);border-top:1px solid rgba(239,236,230,.1);margin-top:22px;padding-top:18px}
+
+  .wa{
+    position:fixed;right:16px;bottom:16px;z-index:60;display:inline-flex;align-items:center;gap:9px;
+    background:var(--green);color:#fff;padding:13px 17px;border-radius:100px;
+    font-size:12px;font-weight:700;letter-spacing:.04em;box-shadow:0 10px 26px rgba(0,0,0,.22);
+  }
+  .wa:hover{background:var(--green-dark)}
+  .wa svg{width:18px;height:18px}
+  @media(max-width:520px){.wa span{display:none}.wa{padding:14px;border-radius:50%}}
+
+  .reveal{opacity:1}
+  .js-reveal .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .js-reveal .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{transition-duration:.001ms!important;animation-duration:.001ms!important}
+    .js-reveal .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="wrap topbar-in">
+    <a href="#top" class="logo" aria-label="Eisen Hair Studio ana sayfa">
+      <b>Eisen</b><i>hair studio</i>
+    </a>
+    <nav class="menu" aria-label="Ana menü">
+      <a class="lnk" href="#hizmetler">Hizmetler</a>
+      <a class="lnk" href="#galeri">Galeri</a>
+      <a class="lnk" href="#surec">Süreç</a>
+      <a class="lnk" href="#iletisim">İletişim</a>
+    </nav>
+    <div class="topbar-act">
+      <a class="btn btn-green" href="https://wa.me/905510663974?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">Randevu</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="kicker" style="color:#A9B7A4">Arnavutköy Merkez · Töre Sokak</span>
+          <h1>
+            Renk, ışık,
+            <span class="serif">hareket.</span>
+          </h1>
+          <p class="lead">
+            Balyaj, ombre ve dip boyada ton seçimi; saçın ışıkla nasıl okunacağını
+            düşünerek yapılır. Eisen'de iş, boyadan önce başlar.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-line" href="https://wa.me/905510663974?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Randevu</a>
+            <a class="btn btn-line" href="#hizmetler" style="border-color:rgba(244,241,236,.28)">Hizmetler</a>
+          </div>
+          <div class="hero-facts">
+            <span>12,7B Instagram takipçisi</span>
+            <span>Renklendirme &amp; balyaj</span>
+            <span>Randevu ile çalışıyoruz</span>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1000&q=80" alt="Saç renklendirme uygulaması" onerror="this.style.opacity=0">
+          <span class="tag">Balyaj · Ombre · Dip boya</span>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <span><b>Kesim</b> · Renklendirme · Balyaj · Bakım · <b>Gelin saçı</b> · Şekillendirme · Keratin · Renklendirme ·</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="hizmetler">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="kicker">Hizmetler</span>
+          <h2 style="margin-top:14px">Saçla ilgili<br>ne varsa.</h2>
+        </div>
+        <p class="right">
+          Her hizmet öncesinde kısa bir konsültasyon yapıyoruz: saçın geçmişi,
+          beklentin ve günlük bakım alışkanlığın. Plan buna göre kuruluyor.
+        </p>
+      </div>
+
+      <div class="svc reveal">
+        <div class="svc-row">
+          <span class="svc-n">01</span>
+          <h3>Balyaj &amp; Ombre</h3>
+          <p>Yüzü aydınlatan, dip çizgisi belli olmayan renk geçişleri. Ten rengine göre ton seçimi.</p>
+        </div>
+        <div class="svc-row">
+          <span class="svc-n">02</span>
+          <h3>Renklendirme</h3>
+          <p>Tek renk, dip boya ve kapatıcı uygulamalar. Saçı yormadan, bakımı planlanmış renk.</p>
+        </div>
+        <div class="svc-row">
+          <span class="svc-n">03</span>
+          <h3>Kesim &amp; Şekillendirme</h3>
+          <p>Saç akışına ve yüz tipine göre kesim; her sabah kolay şekil alan bir sonuç.</p>
+        </div>
+        <div class="svc-row">
+          <span class="svc-n">04</span>
+          <h3>Bakım &amp; Keratin</h3>
+          <p>İşlem görmüş saçlar için nem ve protein dengesi kuran bakımlar, yumuşatma uygulamaları.</p>
+        </div>
+        <div class="svc-row">
+          <span class="svc-n">05</span>
+          <h3>Gelin &amp; Özel Gün</h3>
+          <p>Gelin, nişan ve kına için saç. Prova ile birlikte planlanan, gün boyu bozulmayan bir hazırlık.</p>
+        </div>
+        <div class="svc-row">
+          <span class="svc-n">06</span>
+          <h3>Kaynak</h3>
+          <p>Uzunluk ve hacim için kaynak uygulaması. Saç yapısına uygun yöntem ve renk eşleşmesi.</p>
+        </div>
+      </div>
+
+      <p class="note reveal">
+        Fiyatlar hizmete, saç uzunluğuna ve işlem geçmişine göre değişir.
+        <a href="https://wa.me/905510663974?text=Merhaba%2C%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan net fiyat alın →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="gal" id="galeri">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="kicker">Galeri</span>
+          <h2 style="margin-top:14px">Stüdyodan.</h2>
+        </div>
+        <p class="right">Günlük çalışmalardan bir seçki. Tümü Instagram hesabında.</p>
+      </div>
+
+      <div class="gal-grid reveal">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80" alt="Balyaj uygulaması" loading="lazy" onerror="this.style.opacity=0">
+          <figcaption class="cap">Balyaj</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80" alt="Saç şekillendirme" loading="lazy" onerror="this.style.opacity=0">
+          <figcaption class="cap">Şekillendirme</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=80" alt="Gelin saçı" loading="lazy" onerror="this.style.opacity=0">
+          <figcaption class="cap">Gelin</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" alt="Stüdyo içi" loading="lazy" onerror="this.style.opacity=0">
+          <figcaption class="cap">Stüdyo</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Salon" loading="lazy" onerror="this.style.opacity=0">
+          <figcaption class="cap">Atölye</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="surec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="kicker">Süreç</span>
+          <h2 style="margin-top:14px">Randevu<br>nasıl işliyor?</h2>
+        </div>
+        <p class="right">Kapıda bekleme yok. Her müşteriye ayrılan bir süre var, o yüzden randevuyla çalışıyoruz.</p>
+      </div>
+
+      <div class="steps reveal">
+        <div class="step">
+          <b>01</b>
+          <h3>Konsültasyon</h3>
+          <p>Saçın mevcut durumu, işlem geçmişi ve beklentin konuşulur. Uygulanabilir mi, kaç seansta olur — net söylenir.</p>
+        </div>
+        <div class="step">
+          <b>02</b>
+          <h3>Uygulama</h3>
+          <p>Seçilen yöntem ve ton uygulanır. Süre ve sonuç, başlamadan önce birlikte kararlaştırılır.</p>
+        </div>
+        <div class="step">
+          <b>03</b>
+          <h3>Evde bakım</h3>
+          <p>Rengin uzun ömürlü kalması için ürün ve bakım önerisi verilir. Sonraki randevu zamanı birlikte planlanır.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="iletisim">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <span class="kicker">İletişim</span>
+        <h2>Randevu<br>alalım.</h2>
+        <p class="lead">Formu doldur, WhatsApp mesajı hazır gelsin. Aynı gün dönüş yapıyoruz.</p>
+
+        <ul class="info">
+          <li>
+            <span class="k">Adres</span>
+            <span class="v">Merkez Mah. Töre Sk. No:2 D:1A<br>Arnavutköy / İstanbul</span>
+          </li>
+          <li>
+            <span class="k">Telefon</span>
+            <span class="v"><a href="tel:+905510663974">0551 066 39 74</a></span>
+          </li>
+          <li>
+            <span class="k">Instagram</span>
+            <span class="v"><a href="https://www.instagram.com/eisenhairstudio/" target="_blank" rel="noopener">@eisenhairstudio</a></span>
+          </li>
+          <li>
+            <span class="k">Çalışma</span>
+            <span class="v">Randevu ile<br><span style="font-size:12.5px;color:rgba(239,236,230,.5)">Güncel saatler için WhatsApp'tan yazabilirsin.</span></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <div class="card">
+          <h3>Randevu Talebi</h3>
+          <p class="hint">Bilgilerini bırak, WhatsApp üzerinden onaylayalım.</p>
+          <form id="bookingForm" novalidate>
+            <div class="field">
+              <label for="name">Ad Soyad</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Adın ve soyadın" required>
+            </div>
+            <div class="row2">
+              <div class="field">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="05__ ___ __ __" required>
+              </div>
+              <div class="field">
+                <label for="service">Hizmet</label>
+                <select id="service" name="service">
+                  <option>Balyaj / Ombre</option>
+                  <option>Renklendirme</option>
+                  <option>Kesim &amp; Şekillendirme</option>
+                  <option>Bakım / Keratin</option>
+                  <option>Gelin Saçı</option>
+                  <option>Kaynak</option>
+                  <option>Emin değilim</option>
+                </select>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="field">
+                <label for="date">Tercih ettiğin gün</label>
+                <input type="date" id="date" name="date">
+              </div>
+              <div class="field">
+                <label for="time">Saat</label>
+                <select id="time" name="time">
+                  <option>Fark etmez</option>
+                  <option>09:00 – 12:00</option>
+                  <option>12:00 – 15:00</option>
+                  <option>15:00 – 18:00</option>
+                  <option>18:00 – 21:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="note">Not (opsiyonel)</label>
+              <textarea id="note" name="note" placeholder="Mevcut saç rengi, istediğin ton, işlem geçmişi"></textarea>
+            </div>
+            <button type="submit" class="btn btn-fill">WhatsApp ile Gönder</button>
+            <p class="fine">Form sadece WhatsApp mesajı oluşturur; bilgiler hiçbir yerde saklanmaz.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="map reveal">
+        <iframe
+          title="Eisen Hair Studio konum"
+          src="https://maps.google.com/maps?q=Eisen%20Hair%20Studio%20T%C3%B6re%20Sk.%202%20Arnavutk%C3%B6y&z=16&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <b>Eisen</b>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <a href="tel:+905510663974">0551 066 39 74</a>
+        <a href="https://www.instagram.com/eisenhairstudio/" target="_blank" rel="noopener">@eisenhairstudio</a>
+        <a href="#iletisim">Randevu</a>
+      </div>
+    </div>
+    <p class="demo-note">
+      Bu sayfa Eisen Hair Studio için hazırlanmış bir önizleme (demo) çalışmasıdır. Yayına alınmamıştır.
+      Fotoğraflar temsilîdir; gerçek işletme fotoğraflarıyla değiştirilecektir.
+    </p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/905510663974?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp ile yaz">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.22 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>document.documentElement.classList.add('js-reveal')</script>
+<script>
+  const bar = document.getElementById('topbar');
+  const onScroll = () => bar.classList.toggle('solid', window.scrollY > 60);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  document.getElementById('bookingForm').addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    const v = (id) => (document.getElementById(id).value || '').trim();
+    const name = v('name'), phone = v('phone');
+    if (!name || !phone) { document.getElementById(name ? 'phone' : 'name').focus(); return; }
+    const lines = [
+      'Merhaba, randevu almak istiyorum.',
+      'Ad Soyad: ' + name,
+      'Telefon: ' + phone,
+      'Hizmet: ' + v('service'),
+      v('date') ? 'Tarih: ' + v('date') : '',
+      'Saat aralığı: ' + v('time'),
+      v('note') ? 'Not: ' + v('note') : ''
+    ].filter(Boolean);
+    window.open('https://wa.me/905510663974?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>

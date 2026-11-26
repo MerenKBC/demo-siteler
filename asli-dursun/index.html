@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aslı Dursun Güzellik Merkezi — Arnavutköy</title>
+<meta name="description" content="Arnavutköy Merkez'de gelin makyajı, cilt bakımı ve güzellik hizmetleri. Aslı Dursun Güzellik Merkezi — Ayşıl Sokak. Randevu: 0538 402 90 30">
+<meta name="theme-color" content="#FBF1ED">
+<meta name="robots" content="noindex, nofollow">
+
+<meta property="og:title" content="Aslı Dursun Güzellik Merkezi — Arnavutköy">
+<meta property="og:description" content="Gelin makyajı, cilt bakımı, kaş-kirpik. Arnavutköy Merkez.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Aslı Dursun Güzellik Merkezi",
+  "telephone": "+905384029030",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ayşıl Sk. No:30A, Merkez Mah.",
+    "addressLocality": "Arnavutköy",
+    "addressRegion": "İstanbul",
+    "addressCountry": "TR"
+  },
+  "sameAs": ["https://www.instagram.com/aslidursun.arnavutkoy/"]
+}
+</script>
+
+<style>
+  :root{
+    --blush:#FBF1ED;
+    --blush-2:#F4E4DE;
+    --rose:#B9736A;
+    --rose-dark:#9C5A52;
+    --ink:#2A1C19;
+    --muted:#7E6A65;
+    --line:rgba(42,28,25,.14);
+    --max:1160px;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--blush);color:var(--ink);
+    font-family:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:16px;line-height:1.7;font-weight:300;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  figure{margin:0}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{margin:0;font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.01em}
+  em{font-style:italic}
+  p{margin:0}
+  ::selection{background:var(--rose);color:#fff}
+
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+  @media(min-width:820px){.wrap{padding:0 44px}}
+
+  .kicker{
+    font-family:"Jost",sans-serif;font-size:10.5px;letter-spacing:.26em;
+    text-transform:uppercase;font-weight:500;color:var(--rose);
+  }
+
+  /* Header */
+  .head{position:fixed;inset:0 0 auto 0;z-index:50;padding:16px 0;transition:background .3s,box-shadow .3s,padding .3s}
+  .head.solid{background:rgba(251,241,237,.95);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line);padding:11px 0}
+  .head-in{display:flex;align-items:center;justify-content:space-between;gap:18px}
+  .brand{line-height:1.05;white-space:nowrap}
+  .brand b{display:block;font-family:"DM Serif Display",serif;font-size:19px;font-weight:400;letter-spacing:.01em}
+  .brand i{display:block;font-style:normal;font-size:8.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);margin-top:4px}
+  .head:not(.solid) .brand b{color:#fff}
+  .head:not(.solid) .brand i{color:#F3DCD6}
+  .nav{display:none;gap:26px}
+  @media(min-width:1000px){.nav{display:flex}}
+  .nav a{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:400;padding:4px 0;border-bottom:1px solid transparent;transition:border-color .2s}
+  .head:not(.solid) .nav a{color:#fff}
+  .nav a:hover{border-color:currentColor}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:13px 26px;border-radius:100px;border:1px solid transparent;
+    font-family:"Jost",sans-serif;font-size:11.5px;font-weight:500;letter-spacing:.16em;
+    text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:background .22s,color .22s,border-color .22s;
+  }
+  .btn:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+  .btn-rose{background:var(--rose);color:#fff}
+  .btn-rose:hover{background:var(--rose-dark)}
+  .btn-pale{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.5);color:#fff}
+  .btn-pale:hover{background:#fff;color:var(--ink);border-color:#fff}
+  .btn-out{border-color:var(--ink);color:var(--ink)}
+  .btn-out:hover{background:var(--ink);color:var(--blush)}
+
+  /* Hero */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 60px;overflow:hidden;color:#fff}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .hero-bg::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(105deg,rgba(30,16,13,.86) 0%,rgba(30,16,13,.66) 42%,rgba(30,16,13,.28) 72%,rgba(30,16,13,.5) 100%);
+  }
+  .hero .wrap{position:relative;z-index:2;width:100%}
+  .hero-in{max-width:640px}
+  .hero .kicker{color:#F3DCD6}
+  .hero h1{font-size:clamp(40px,7.4vw,78px);margin:20px 0 22px;line-height:1.04}
+  .hero h1 em{color:#F3DCD6}
+  .hero p.lead{color:rgba(255,255,255,.86);max-width:430px;font-size:15.5px;font-weight:300}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+  .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+  .hero-tags span{
+    font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+    border:1px solid rgba(255,255,255,.35);border-radius:100px;padding:7px 14px;color:rgba(255,255,255,.82);
+  }
+
+  /* Sections */
+  section{padding:78px 0}
+  @media(min-width:820px){section{padding:108px 0}}
+  .center-head{text-align:center;max-width:620px;margin:0 auto 46px}
+  .center-head h2{font-size:clamp(30px,4.6vw,52px);margin:14px 0 16px}
+  .center-head p{color:var(--muted);font-size:15px;font-weight:300}
+
+  /* Hizmet kartları */
+  .cards{display:grid;gap:14px}
+  @media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
+  @media(min-width:1020px){.cards{grid-template-columns:1fr 1fr 1fr}}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px 24px 30px;
+    transition:transform .25s ease,box-shadow .25s ease;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(120,70,60,.10)}
+  .card .ico{
+    width:38px;height:38px;border-radius:50%;background:var(--blush-2);color:var(--rose);
+    display:flex;align-items:center;justify-content:center;margin-bottom:20px;
+    font-family:"DM Serif Display",serif;font-size:15px;
+  }
+  .card h3{font-size:21px;margin-bottom:8px}
+  .card p{font-size:13.8px;color:var(--muted);font-weight:300;line-height:1.65}
+
+  /* Gelin bandı */
+  .bride{background:var(--blush-2);padding:0}
+  .bride-in{display:grid;gap:0}
+  @media(min-width:900px){.bride-in{grid-template-columns:1fr 1fr;align-items:stretch}}
+  .bride-img{position:relative;min-height:320px;overflow:hidden}
+  @media(min-width:900px){.bride-img{min-height:560px}}
+  .bride-img img{width:100%;height:100%;object-fit:cover}
+  .bride-txt{padding:56px 22px;display:flex;flex-direction:column;justify-content:center}
+  @media(min-width:900px){.bride-txt{padding:80px 64px}}
+  .bride-txt h2{font-size:clamp(28px,3.8vw,44px);margin:14px 0 18px}
+  .bride-txt p{color:var(--muted);font-size:14.5px;font-weight:300;max-width:400px}
+  .bride-list{list-style:none;padding:0;margin:26px 0 30px;display:grid;gap:11px}
+  .bride-list li{display:flex;gap:12px;font-size:14px;color:var(--ink)}
+  .bride-list li::before{
+    content:"—";color:var(--rose);flex:0 0 auto;
+  }
+
+  /* Galeri */
+  .gal-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media(min-width:820px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
+  .gal-grid figure{position:relative;overflow:hidden;border-radius:10px;background:#EBD9D3;aspect-ratio:4/5}
+  .gal-grid figure:nth-child(1){grid-row:span 2;aspect-ratio:auto}
+  @media(max-width:819px){.gal-grid figure:nth-child(1){grid-column:span 2;grid-row:auto;aspect-ratio:16/10}}
+  .gal-grid img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+  .gal-grid figure:hover img{transform:scale(1.04)}
+
+  /* Referans / söz */
+  .quote{background:#2A1C19;color:#F7E9E4;text-align:center}
+  .quote blockquote{
+    margin:0 auto;max-width:760px;font-family:"DM Serif Display",serif;
+    font-size:clamp(23px,3.2vw,36px);line-height:1.35;font-style:italic;
+  }
+  .quote .kicker{color:#E7BDB3;margin-bottom:22px;display:block}
+  .quote p.sig{margin-top:24px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,233,228,.55)}
+
+  /* İletişim */
+  .contact{background:var(--blush)}
+  .contact-grid{display:grid;gap:40px}
+  @media(min-width:900px){.contact-grid{grid-template-columns:.9fr 1.1fr;gap:60px}}
+  .contact h2{font-size:clamp(30px,4.4vw,50px);margin:14px 0 16px}
+  .contact p.lead{color:var(--muted);font-size:14.5px;max-width:380px;font-weight:300}
+  .info{list-style:none;padding:0;margin:34px 0 0;display:grid;gap:20px}
+  .info li{display:grid;grid-template-columns:80px 1fr;gap:14px}
+  .info .k{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding-top:5px}
+  .info .v{font-size:14.5px;line-height:1.65}
+  .info .v a{border-bottom:1px solid rgba(42,28,25,.25)}
+  .info .v a:hover{color:var(--rose-dark);border-color:var(--rose)}
+
+  .form-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 22px}
+  @media(min-width:600px){.form-card{padding:40px 34px}}
+  .form-card h3{font-size:24px;margin-bottom:6px}
+  .form-card .hint{font-size:12.5px;color:var(--muted);margin-bottom:24px;font-weight:300}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  .field input,.field select,.field textarea{
+    width:100%;padding:12px 14px;border:1px solid rgba(42,28,25,.2);border-radius:8px;
+    background:#FDFAF9;font-family:inherit;font-size:14px;color:var(--ink);
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--rose);box-shadow:0 0 0 3px rgba(185,115,106,.16)}
+  .field textarea{min-height:74px;resize:vertical}
+  .row2{display:grid;gap:14px}
+  @media(min-width:520px){.row2{grid-template-columns:1fr 1fr}}
+  .form-card .btn{width:100%;margin-top:6px}
+  .fine{font-size:11px;color:var(--muted);margin-top:12px;line-height:1.5;font-weight:300}
+
+  .map{margin-top:52px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .map iframe{width:100%;height:330px;border:0;display:block;filter:grayscale(.2) contrast(1.02)}
+
+  footer{background:#2A1C19;color:rgba(247,233,228,.55);padding:34px 0;font-size:12px}
+  .foot{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
+  .foot b{font-family:"DM Serif Display",serif;font-weight:400;font-size:17px;color:#F7E9E4}
+  footer a:hover{color:#fff}
+  .demo-note{font-size:10.5px;color:rgba(247,233,228,.35);border-top:1px solid rgba(247,233,228,.12);margin-top:20px;padding-top:16px}
+
+  .wa{
+    position:fixed;right:16px;bottom:16px;z-index:60;display:inline-flex;align-items:center;gap:9px;
+    background:#25A05D;color:#fff;padding:13px 18px;border-radius:100px;
+    font-size:12px;font-weight:500;letter-spacing:.04em;box-shadow:0 10px 26px rgba(0,0,0,.2);
+  }
+  .wa:hover{background:#1C854C}
+  .wa svg{width:18px;height:18px}
+  @media(max-width:520px){.wa span{display:none}.wa{padding:14px;border-radius:50%}}
+
+  .reveal{opacity:1}
+  .js-reveal .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .js-reveal .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{transition-duration:.001ms!important;animation-duration:.001ms!important}
+    .js-reveal .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="head" id="head">
+  <div class="wrap head-in">
+    <a href="#top" class="brand" aria-label="Aslı Dursun Güzellik Merkezi ana sayfa">
+      <b>Aslı Dursun</b>
+      <i>Güzellik Merkezi · Arnavutköy</i>
+    </a>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#gelin">Gelin</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+    <a class="btn btn-rose" href="https://wa.me/905384029030?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">Randevu</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1900&q=80" alt="Gelin makyajı" onerror="this.style.opacity=0">
+    </div>
+    <div class="wrap">
+      <div class="hero-in">
+        <span class="kicker">Arnavutköy Merkez · Ayşıl Sokak</span>
+        <h1>Özel gününüzde<br><em>en iyi hâliniz.</em></h1>
+        <p class="lead">
+          Gelin makyajı, cilt bakımı ve kişiye özel hazırlık. Provadan düğün gününe
+          kadar tek elden, sakin bir süreç.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-rose" href="https://wa.me/905384029030?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Randevu</a>
+          <a class="btn btn-pale" href="#hizmetler">Hizmetler</a>
+        </div>
+        <div class="hero-tags">
+          <span>Gelin &amp; özel gün</span>
+          <span>Cilt bakımı</span>
+          <span>7,9B takipçi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hizmetler">
+    <div class="wrap">
+      <div class="center-head reveal">
+        <span class="kicker">Hizmetler</span>
+        <h2>Bakım, makyaj, hazırlık.</h2>
+        <p>Her uygulama öncesinde cildinizi ve beklentinizi konuşuyoruz. Sonuç, o gün değil sonraki günlerde de iyi görünmeli.</p>
+      </div>
+
+      <div class="cards reveal">
+        <article class="card">
+          <div class="ico">01</div>
+          <h3>Gelin Makyajı</h3>
+          <p>Prova, düğün ve kına için makyaj. Fotoğrafta doğru görünen, gün boyu kalıcı bir hazırlık.</p>
+        </article>
+        <article class="card">
+          <div class="ico">02</div>
+          <h3>Cilt Bakımı</h3>
+          <p>Cilt tipinize göre temizlik, nem ve canlılık odaklı bakımlar. Düzenli bakım için takip planı.</p>
+        </article>
+        <article class="card">
+          <div class="ico">03</div>
+          <h3>Kalıcı Makyaj</h3>
+          <p>Kaş, eyeliner ve dudak için kalıcı uygulamalar. Doğal görünüm önceliğiyle, ölçülü çalışma.</p>
+        </article>
+        <article class="card">
+          <div class="ico">04</div>
+          <h3>Kaş &amp; Kirpik</h3>
+          <p>Kaş tasarımı, lifting ve kirpik uygulamaları. Yüz hatlarına göre şekillendirme.</p>
+        </article>
+        <article class="card">
+          <div class="ico">05</div>
+          <h3>Epilasyon</h3>
+          <p>Bölgesel epilasyon uygulamaları. Cilt hassasiyetine göre planlanan seans aralıkları.</p>
+        </article>
+        <article class="card">
+          <div class="ico">06</div>
+          <h3>Saç &amp; Şekillendirme</h3>
+          <p>Özel gün saçı, fön ve şekillendirme. Makyajla birlikte planlanan bütünlüklü bir hazırlık.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bride" id="gelin">
+    <div class="bride-in">
+      <div class="bride-img reveal">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80" alt="Gelin hazırlığı" loading="lazy" onerror="this.style.opacity=0">
+      </div>
+      <div class="bride-txt reveal">
+        <span class="kicker">Gelin Hazırlığı</span>
+        <h2>Düğün günü<br>tek bir telaş olmasın.</h2>
+        <p>
+          Gelin hazırlığını bir hafta öncesinden planlıyoruz: cilt bakımı, prova,
+          saç ve makyaj. Gün geldiğinde sıra değil, sadece uygulama kalıyor.
+        </p>
+        <ul class="bride-list">
+          <li>Önceden yapılan makyaj provası</li>
+          <li>Düğün gününe özel cilt hazırlığı</li>
+          <li>Saç ve makyajın birlikte planlanması</li>
+          <li>Kına ve nişan için ayrı program</li>
+        </ul>
+        <a class="btn btn-rose" style="align-self:flex-start" href="https://wa.me/905384029030?text=Merhaba%2C%20gelin%20haz%C4%B1rl%C4%B1%C4%9F%C4%B1%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Gelin Bilgisi Al</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <div class="wrap">
+      <div class="center-head reveal">
+        <span class="kicker">Galeri</span>
+        <h2>Çalışmalarımızdan.</h2>
+      </div>
+      <div class="gal-grid reveal">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80" alt="Makyaj uygulaması" loading="lazy" onerror="this.style.opacity=0">
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" alt="Merkez içi" loading="lazy" onerror="this.style.opacity=0">
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80" alt="Saç şekillendirme" loading="lazy" onerror="this.style.opacity=0">
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80" alt="Özel gün saçı" loading="lazy" onerror="this.style.opacity=0">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="wrap reveal">
+      <span class="kicker">Yaklaşım</span>
+      <blockquote>“Amaç daha fazla makyaj değil; kendi yüzünüzün en dinlenmiş, en aydınlık hâli.”</blockquote>
+      <p class="sig">Aslı Dursun Güzellik Merkezi</p>
+    </div>
+  </section>
+
+  <section class="contact" id="iletisim">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="reveal">
+          <span class="kicker">İletişim</span>
+          <h2>Randevunuzu<br>alalım.</h2>
+          <p class="lead">Formu doldurun, WhatsApp mesajı hazır gelsin. Aynı gün dönüş yapıyoruz.</p>
+
+          <ul class="info">
+            <li>
+              <span class="k">Adres</span>
+              <span class="v">Ayşıl Sk. No:30A<br>Merkez Mah. Arnavutköy / İstanbul</span>
+            </li>
+            <li>
+              <span class="k">Telefon</span>
+              <span class="v"><a href="tel:+905384029030">0538 402 90 30</a></span>
+            </li>
+            <li>
+              <span class="k">Instagram</span>
+              <span class="v"><a href="https://www.instagram.com/aslidursun.arnavutkoy/" target="_blank" rel="noopener">@aslidursun.arnavutkoy</a></span>
+            </li>
+            <li>
+              <span class="k">Çalışma</span>
+              <span class="v">Randevu ile<br><span style="font-size:12.5px;color:var(--muted)">Güncel saatler için WhatsApp'tan yazabilirsiniz.</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reveal">
+          <div class="form-card">
+            <h3>Randevu Talebi</h3>
+            <p class="hint">Bilgilerinizi bırakın, WhatsApp üzerinden onaylayalım.</p>
+            <form id="bookingForm" novalidate>
+              <div class="field">
+                <label for="name">Ad Soyad</label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="Adınız ve soyadınız" required>
+              </div>
+              <div class="row2">
+                <div class="field">
+                  <label for="phone">Telefon</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="05__ ___ __ __" required>
+                </div>
+                <div class="field">
+                  <label for="service">Hizmet</label>
+                  <select id="service" name="service">
+                    <option>Gelin Makyajı</option>
+                    <option>Özel Gün Makyajı</option>
+                    <option>Cilt Bakımı</option>
+                    <option>Kalıcı Makyaj</option>
+                    <option>Kaş &amp; Kirpik</option>
+                    <option>Epilasyon</option>
+                    <option>Saç &amp; Şekillendirme</option>
+                    <option>Emin değilim</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row2">
+                <div class="field">
+                  <label for="date">Tercih ettiğiniz gün</label>
+                  <input type="date" id="date" name="date">
+                </div>
+                <div class="field">
+                  <label for="time">Saat</label>
+                  <select id="time" name="time">
+                    <option>Fark etmez</option>
+                    <option>09:00 – 12:00</option>
+                    <option>12:00 – 15:00</option>
+                    <option>15:00 – 18:00</option>
+                    <option>18:00 – 20:00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="note">Not (opsiyonel)</label>
+                <textarea id="note" name="note" placeholder="Özel gün, cilt tipi, istediğiniz görünüm"></textarea>
+              </div>
+              <button type="submit" class="btn btn-rose">WhatsApp ile Gönder</button>
+              <p class="fine">Form sadece WhatsApp mesajı oluşturur; bilgiler hiçbir yerde saklanmaz.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="map reveal">
+        <iframe
+          title="Aslı Dursun Güzellik Merkezi konum"
+          src="https://maps.google.com/maps?q=Asl%C4%B1%20Dursun%20G%C3%BCzellik%20Merkezi%20Ay%C5%9F%C4%B1l%20Sk.%2030%20Arnavutk%C3%B6y&z=16&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <b>Aslı Dursun</b>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <a href="tel:+905384029030">0538 402 90 30</a>
+        <a href="https://www.instagram.com/aslidursun.arnavutkoy/" target="_blank" rel="noopener">@aslidursun.arnavutkoy</a>
+        <a href="#iletisim">Randevu</a>
+      </div>
+    </div>
+    <p class="demo-note">
+      Bu sayfa Aslı Dursun Güzellik Merkezi için hazırlanmış bir önizleme (demo) çalışmasıdır. Yayına alınmamıştır.
+      Fotoğraflar temsilîdir; gerçek işletme fotoğraflarıyla değiştirilecektir.
+    </p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/905384029030?text=Merhaba%2C%20randevu%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp ile yaz">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.22 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>document.documentElement.classList.add('js-reveal')</script>
+<script>
+  const head = document.getElementById('head');
+  const onScroll = () => head.classList.toggle('solid', window.scrollY > 60);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  document.getElementById('bookingForm').addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    const v = (id) => (document.getElementById(id).value || '').trim();
+    const name = v('name'), phone = v('phone');
+    if (!name || !phone) { document.getElementById(name ? 'phone' : 'name').focus(); return; }
+    const lines = [
+      'Merhaba, randevu almak istiyorum.',
+      'Ad Soyad: ' + name,
+      'Telefon: ' + phone,
+      'Hizmet: ' + v('service'),
+      v('date') ? 'Tarih: ' + v('date') : '',
+      'Saat aralığı: ' + v('time'),
+      v('note') ? 'Not: ' + v('note') : ''
+    ].filter(Boolean);
+    window.open('https://wa.me/905384029030?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>
