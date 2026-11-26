@@ -11,7 +11,7 @@
 ## Notlar
 
 - Yayına alınan sayfalar **demo** niteliğindedir; işletmenin resmî sitesi değildir.
-- Fotoğraflar temsilîdir (stok). Gerçek işletme fotoğraflarıyla değiştirilecektir.
+- Fotoğraflar temsilîdir (stok). Anlaşma halinde işletmenin kendi fotoğraflarıyla değiştirilir.
 - Randevu formu sunucuya veri göndermez; yalnızca WhatsApp mesajı oluşturur.
 - İşletme onayı olmadan alan adı bağlanmaz, arama motorlarına açılmaz (`noindex`).
 - Yayın: GitHub Pages, `main` dalı, kök dizin.
