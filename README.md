@@ -9,6 +9,9 @@
 | `asli-dursun/` | Aslı Dursun Güzellik Merkezi | https://merenkbc.github.io/demo-siteler/asli-dursun/ |
 | `emre-yildirim/` | Emre Yıldırım Hair Studio | https://merenkbc.github.io/demo-siteler/emre-yildirim/ |
 | `aden-bogazkoy/` | Aden Boğazköy Tesisleri | https://merenkbc.github.io/demo-siteler/aden-bogazkoy/ |
+| `mifflex/` | Mifflex (kurumsal şablon) | https://merenkbc.github.io/demo-siteler/mifflex/ |
+
+> `mifflex/` bir şablondur: logo, telefon, e-posta, adres ve ürün gamı yer tutucudur. Gerçek bilgiler geldikçe güncellenecek.
 
 ## Notlar
 
