@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mifflex — Esnek Ambalaj Üretimi</title>
 <meta name="description" content="Mifflex: rulo film, poşet ve baskılı esnek ambalaj üretimi. Numune ile başlayan, ölçüsü müşteriye göre kurulan üretim.">
-<meta name="theme-color" content="#0C0F0D">
+<meta name="theme-color" content="#F4F4F0">
 <meta name="robots" content="noindex, nofollow">
 
 <meta property="og:title" content="Mifflex — Esnek Ambalaj Üretimi">
@@ -120,38 +120,88 @@
   @media(max-width:560px){.head-act .btn{padding:11px 14px;font-size:10.5px}}
 
   /* Hero */
-  .hero{position:relative;background:var(--ink);color:var(--paper);overflow:hidden}
-  .hero-bg{position:absolute;inset:0}
-  .hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.42}
-  .hero-bg::after{
-    content:"";position:absolute;inset:0;
-    background:
-      radial-gradient(120% 90% at 12% 25%,rgba(10,13,11,.92) 0%,rgba(10,13,11,.55) 55%,rgba(10,13,11,.25) 100%),
-      linear-gradient(180deg,rgba(10,13,11,.55),rgba(10,13,11,.92));
+  .hero{
+    position:relative;background:var(--paper);color:var(--ink);overflow:hidden;
+    border-bottom:1px solid var(--line);padding:0;
   }
-  .hero-in{position:relative;z-index:2;padding:64px 0 0}
-  @media(min-width:900px){.hero-in{padding:96px 0 0}}
-  .hero-grid{display:grid;gap:36px;align-items:end}
-  @media(min-width:980px){.hero-grid{grid-template-columns:1.35fr .65fr;gap:60px}}
-  .hero h1{font-size:clamp(38px,6.6vw,76px);line-height:.98;margin:18px 0 22px;font-weight:600}
-  .hero h1 span{color:var(--lime)}
-  .hero p.lead{color:rgba(244,244,240,.76);max-width:520px;font-size:15.5px}
-  .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
-  .hero-mini{display:grid;gap:14px;border-left:1px solid var(--line-dark);padding-left:22px}
-  @media(max-width:979px){.hero-mini{border-left:0;padding-left:0;grid-template-columns:1fr 1fr}}
-  .mini{display:flex;flex-direction:column;gap:4px}
-  .mini b{font-family:"Space Grotesk",sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime)}
-  .mini span{font-size:12.5px;color:rgba(244,244,240,.6);line-height:1.5}
+  .hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:
+      linear-gradient(to right,rgba(12,15,13,.05) 1px,transparent 1px),
+      linear-gradient(to bottom,rgba(12,15,13,.05) 1px,transparent 1px);
+    background-size:76px 76px;
+    -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.85),transparent 72%);
+    mask-image:linear-gradient(180deg,rgba(0,0,0,.85),transparent 72%);
+  }
+  .hero-in{position:relative;z-index:2;padding-top:52px}
+  @media(min-width:900px){.hero-in{padding-top:74px}}
+  .hero-grid{display:grid;gap:38px;align-items:center}
+  @media(min-width:980px){.hero-grid{grid-template-columns:1.06fr .94fr;gap:58px;align-items:center}}
+  .hero-copy{max-width:620px;min-width:0}
+  .hero h1{
+    font-size:clamp(30px,5vw,62px);line-height:1.04;margin:20px 0 20px;
+    font-weight:600;letter-spacing:-.03em;
+  }
+  .hero h1 span{border-bottom:3px solid var(--lime);padding-bottom:1px}
+  .hero p.lead{color:#4A5049;max-width:500px;font-size:15.3px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+
+  .hero-mini{
+    display:grid;grid-template-columns:1fr;gap:14px;
+    margin-top:30px;padding-top:18px;border-top:1px solid var(--line);
+  }
+  @media(min-width:520px){.hero-mini{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+  .mini{display:flex;flex-direction:column;gap:2px;min-width:0}
+  .mini b{
+    font-family:"Space Grotesk",sans-serif;font-size:10.5px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--ink);display:flex;align-items:center;gap:7px;
+  }
+  .mini b::before{content:"";width:5px;height:5px;background:var(--lime);flex:0 0 auto}
+  .mini span{font-size:12px;color:var(--steel);line-height:1.5}
+
+  /* Hero görsel paneli */
+  .hero-fig{
+    position:relative;margin:0;background:#E3E4DC;border:1px solid var(--line);
+    padding:9px;min-width:0;box-shadow:0 18px 40px -30px rgba(12,15,13,.45);
+  }
+  .hero-fig .shot{position:relative;overflow:hidden;aspect-ratio:16/11;background:#D6D7CF;min-width:0}
+  .hero-fig img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.03)}
+  .hero-fig .plate{
+    position:absolute;left:9px;top:9px;z-index:2;background:var(--lime);color:var(--ink);
+    font-family:"Space Grotesk",sans-serif;font-size:9.5px;letter-spacing:.16em;
+    text-transform:uppercase;font-weight:600;padding:7px 11px;
+  }
+  .hero-fig figcaption{
+    display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px;
+    padding:11px 3px 2px;
+  }
+  .hero-fig figcaption b{
+    font-family:"Space Grotesk",sans-serif;font-size:10.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink);
+  }
+  .hero-fig figcaption span{font-size:11px;color:var(--steel);text-align:right;line-height:1.4}
 
   .hero-strip{
-    position:relative;z-index:2;margin-top:48px;border-top:1px solid var(--line-dark);
+    position:relative;z-index:2;margin-top:50px;border-top:1px solid var(--line);
   }
-  .strip-in{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-dark)}
+  .strip-in{display:grid;grid-template-columns:1fr 1fr}
   @media(min-width:900px){.strip-in{grid-template-columns:repeat(4,1fr)}}
-  .strip-item{background:var(--ink);padding:22px 18px 24px;display:flex;gap:12px;align-items:flex-start}
-  .strip-item svg{width:22px;height:22px;flex:0 0 auto;color:var(--lime);margin-top:2px}
-  .strip-item b{display:block;font-family:"Space Grotesk",sans-serif;font-size:13.5px;letter-spacing:.01em}
-  .strip-item span{display:block;font-size:11.5px;color:rgba(244,244,240,.48);margin-top:3px;line-height:1.5}
+  .strip-item{
+    padding:20px 16px 22px;display:flex;gap:11px;align-items:flex-start;
+    border-bottom:1px solid var(--line);
+  }
+  .strip-item:nth-child(2n){border-left:1px solid var(--line)}
+  @media(min-width:900px){
+    .strip-item{border-bottom:0;border-left:1px solid var(--line)}
+    .strip-item:nth-child(2n){border-left:1px solid var(--line)}
+    .strip-item:first-child{border-left:0;padding-left:0}
+  }
+  .strip-item svg{width:20px;height:20px;flex:0 0 auto;color:var(--ink);opacity:.55;margin-top:2px}
+  .strip-item b{
+    display:block;font-family:"Space Grotesk",sans-serif;font-size:12.5px;
+    letter-spacing:.02em;color:var(--ink);
+  }
+  .strip-item span{display:block;font-size:11.5px;color:var(--steel);margin-top:3px;line-height:1.5}
 
   /* Sections */
   section{padding:72px 0}
@@ -216,19 +266,19 @@
   @media(max-width:899px){.step::after{display:none}}
 
   /* Sürdürülebilirlik */
-  .sust{background:var(--ink);color:var(--paper)}
-  .sust .kicker{color:rgba(244,244,240,.55)}
+  .sust{background:#EAEBE4;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sust .kicker{color:var(--steel)}
   .sust-grid{display:grid;gap:34px}
   @media(min-width:960px){.sust-grid{grid-template-columns:1fr 1fr;gap:64px;align-items:center}}
-  .sust h2{font-size:clamp(27px,3.8vw,44px);margin:12px 0 18px;color:var(--paper)}
-  .sust p{color:rgba(244,244,240,.66);font-size:14.8px;margin-bottom:14px;max-width:460px}
-  .sust-list{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:1px;background:var(--line-dark);border:1px solid var(--line-dark)}
-  .sust-list li{background:var(--ink);padding:16px 18px;display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start}
-  .sust-list b{display:block;font-family:"Space Grotesk",sans-serif;font-size:13px;color:var(--lime);margin-bottom:3px}
-  .sust-list span{font-size:12.6px;color:rgba(244,244,240,.6);line-height:1.55}
-  .sust-list .mark{width:20px;height:20px;border:1px solid var(--lime);display:flex;align-items:center;justify-content:center;color:var(--lime);margin-top:2px}
+  .sust h2{font-size:clamp(27px,3.8vw,44px);margin:12px 0 18px;color:var(--ink)}
+  .sust p{color:#4A5049;font-size:14.8px;margin-bottom:14px;max-width:460px}
+  .sust-list{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+  .sust-list li{background:#EAEBE4;padding:16px 18px;display:grid;grid-template-columns:20px minmax(0,1fr);gap:12px;align-items:start}
+  .sust-list b{display:block;font-family:"Space Grotesk",sans-serif;font-size:13px;color:var(--ink);margin-bottom:3px}
+  .sust-list span{font-size:12.6px;color:var(--steel);line-height:1.55}
+  .sust-list .mark{width:20px;height:20px;background:var(--lime);display:flex;align-items:center;justify-content:center;color:var(--ink);margin-top:2px}
   .sust-list .mark svg{width:11px;height:11px}
-  .sust .fig{aspect-ratio:1/1;background:#1B211D}
+  .sust .fig{aspect-ratio:1/1;background:#D9DAD3;border:1px solid var(--line)}
 
   /* Kalite */
   .qual-grid{display:grid;gap:34px}
@@ -354,29 +404,37 @@
 <main id="top">
 
   <!-- HERO -->
-  <section class="hero" style="padding:0" aria-labelledby="hero-title">
-    <div class="hero-bg">
-      <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1900&q=80" alt="Üretim hattı" onerror="this.style.opacity=0">
-    </div>
+  <section class="hero" aria-labelledby="hero-title">
     <div class="wrap hero-in">
       <div class="hero-grid">
-        <div>
-          <span class="kicker on-dark"><span class="dot"></span>Esnek ambalaj üretimi</span>
+        <div class="hero-copy">
+          <span class="kicker"><span class="dot"></span>Esnek ambalaj üretimi</span>
           <h1 id="hero-title">Ölçüsü doğru,<br>baskısı net,<br><span>teslimi zamanında.</span></h1>
           <p class="lead">
             Rulo film, poşet ve baskılı ambalaj. Numune ile başlıyoruz:
             elinize alıp bakmadan seri üretime geçmiyoruz.
           </p>
           <div class="hero-cta">
-            <a class="btn btn-lime" href="#iletisim">Teklif İste<span class="arw">→</span></a>
-            <a class="btn btn-ghost" href="#urunler">Ürünler</a>
+            <a class="btn btn-dark" href="#iletisim">Teklif İste<span class="arw">→</span></a>
+            <a class="btn btn-outline" href="#urunler">Ürünler</a>
+          </div>
+          <div class="hero-mini">
+            <div class="mini"><b>Numune</b><span>Seri üretimden önce onaylı numune</span></div>
+            <div class="mini"><b>Özel ölçü</b><span>Standart kalıba bağlı değil</span></div>
+            <div class="mini"><b>Baskı</b><span>Ambalaj üzerinde marka dili</span></div>
           </div>
         </div>
-        <div class="hero-mini">
-          <div class="mini"><b>Numune</b><span>Seri üretimden önce onaylı numune</span></div>
-          <div class="mini"><b>Özel ölçü</b><span>Standart kalıba bağlı değil</span></div>
-          <div class="mini"><b>Baskı</b><span>Ambalaj üzerinde marka dili</span></div>
-        </div>
+
+        <figure class="hero-fig">
+          <span class="plate">Üretim</span>
+          <div class="shot">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1400&q=80" alt="Üretim hattı" onerror="this.style.opacity=0">
+          </div>
+          <figcaption>
+            <b>Numuneden seri üretime</b>
+            <span>Ölçü, malzeme ve baskı onayı</span>
+          </figcaption>
+        </figure>
       </div>
 
       <div class="hero-strip">
@@ -552,7 +610,7 @@
     <div class="wrap">
       <div class="sust-grid">
         <div class="reveal">
-          <span class="kicker on-dark"><span class="dot"></span>Sürdürülebilirlik</span>
+          <span class="kicker"><span class="dot"></span>Sürdürülebilirlik</span>
           <h2>Daha az malzeme,<br>daha doğru ambalaj.</h2>
           <p>
             Ambalajın çevresel etkisi büyük ölçüde tasarımda belirleniyor.
