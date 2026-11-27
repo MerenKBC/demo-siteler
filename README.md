@@ -7,6 +7,8 @@
 | `kuafor-dayi/` | Kuaför DAYI | https://merenkbc.github.io/demo-siteler/kuafor-dayi/ |
 | `eisen-hair-studio/` | Eisen Hair Studio | https://merenkbc.github.io/demo-siteler/eisen-hair-studio/ |
 | `asli-dursun/` | Aslı Dursun Güzellik Merkezi | https://merenkbc.github.io/demo-siteler/asli-dursun/ |
+| `emre-yildirim/` | Emre Yıldırım Hair Studio | https://merenkbc.github.io/demo-siteler/emre-yildirim/ |
+| `aden-bogazkoy/` | Aden Boğazköy Tesisleri | https://merenkbc.github.io/demo-siteler/aden-bogazkoy/ |
 
 ## Notlar
 
