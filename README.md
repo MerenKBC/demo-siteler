@@ -10,8 +10,11 @@
 | `emre-yildirim/` | Emre Yıldırım Hair Studio | https://merenkbc.github.io/demo-siteler/emre-yildirim/ |
 | `aden-bogazkoy/` | Aden Boğazköy Tesisleri | https://merenkbc.github.io/demo-siteler/aden-bogazkoy/ |
 | `mifflex/` | Mifflex (kurumsal şablon) | https://merenkbc.github.io/demo-siteler/mifflex/ |
+| `mifflex-v2/` | Mifflex (alternatif tek sayfa) | https://merenkbc.github.io/demo-siteler/mifflex-v2/ |
 
 > `mifflex/` bir şablondur: logo, telefon, e-posta, adres ve ürün gamı yer tutucudur. Gerçek bilgiler geldikçe güncellenecek.
+>
+> `mifflex-v2/` ikinci tasarım denemesidir (lacivert/altın, fotoğrafsız düzen). Sayılara, belgelere ve iletişim bilgilerine "örnek" notu eklendi.
 
 ## Notlar
 
